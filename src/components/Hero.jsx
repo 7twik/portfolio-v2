@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
-
+import "./hero.css";
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
-
+import { ComputersCanvas,EarthCanvas } from "./canvas";
+import Typewriter from 'typewriter-effect';
+import {amisha,mydp,dp3} from "../assets";
 const Hero = () => {
+  
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
@@ -16,16 +18,27 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Sattwik</span>
+            Hi, I'm <span className='text-[#915EFF]'>
+              <Typewriter
+                options={{
+                  strings: ['Sattwik Das', 'a Web Developer','Blockchain Developer','looking for internships','a hardworking person'],
+                  autoStart: true,
+                  loop: true,
+                }}/>
+            </span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+          <p className={`${styles.heroSubText} mt-2 textCol`}>
+            
             I develop smart contracts, user <br className='sm:block hidden' />
             interfaces, web applications and web3 applications.
           </p>
         </div>
       </div>
-
-      <ComputersCanvas />
+      {/* <div className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]">
+      <EarthCanvas /></div> */}
+      <div className="outalt">
+      <div className="compalt"><img className="dp" src="https://i.gifer.com/1VB6.gif" alt="nf" /> </div></div>
+      {/* <ComputersCanvas /> */}
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>

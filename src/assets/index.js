@@ -32,12 +32,16 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
-
+import amisha from "./amisha.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
-
+import mydp from "./mpdp.png";
+import dp3 from "./dp3.png";
 export {
+  dp3,
+  mydp,
+  amisha,
   logo,
   logo1,
   backend,
